@@ -5,5 +5,21 @@
     "comments": [
       { "id": 1, "body": "some comment", "postId": 1 }
     ],
-    "profile": { "name": "typicode" }
+    "usuarios": [
+      {
+    "id": 1,
+    "usu_nome": "Daniel Ferrari",
+    "usu_email": "danferri@gmail.com",
+    "usu_senha": "g12345",
+    "usu_nivel": "admin",
+    "usu_celular": "",
+    "usu_cpf": "",
+    "usu_chave": "",
+    "usu_foto": "milleniumfalcon1.png",
+    "usu_emailconfirmado": true,
+    "usu_cadastroativo": true,
+    "created_at": "2023-27-03T20:19.45.826Z",
+    "updated_at": "2023-27-03T20:20.24.537Z"
+    }
+  ]
 }
