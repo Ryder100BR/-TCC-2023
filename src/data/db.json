@@ -1,9 +1,143 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
+  "alunos": [{
+  "id": "1",
+  "nome": "Daniel",
+  "email": "daniel@gmail.com",
+  "senha": "jkgets234",
+  "curso": "Informática para a Internet - 3 Ano",
+  "etec": "ETEC Professor Milton Gazzetti"
+  },
+  {
+    "id": "2",
+    "nome": "JOão",
+    "email": "joao@gmail.com",
+    "senha": "sdafs54",
+    "curso": "Administração - 3 Ano",
+    "etec": "ETEC Professor Milton Gazzetti"
+  },
+  {
+    "id": "3",
+    "nome": "Maria",
+    "email": "maria@gmail.com",
+    "senha": "ksjdasjdn567",
+    "curso": "Agro - 3 Ano",
+    "etec": "ETEC Professor Milton Gazzetti"
+  }
+  ],
+  "eventos": [ {
+  "id": "1",
+  "nome": "Formatura Info",
+  "data": "20/12/2023",
+  "local": "Algum lugar aí"
+  }, 
+  {
+  "id": "2",
+  "nome": "Formatura ADM",
+  "data": "18/12/2023",
+  "local": "Algum lugar aí 2"
+  },
+  {
+    "id": "3",
+    "nome": "Formatura Agro",
+    "data": "22/12/2023",
+    "local": "Algum lugar aí 3" 
+  }
+  ],
+  "convites": [ {
+  "id": "1",
+  "id_aluno": "1",
+  "id_evento": "1",
+  "situacao": "Aceito",
+  "unique idx_aluno_evento": "1, 1"
+  },
+  {
+    "id": "2",
+  "id_aluno": "2",
+  "id_evento": "2",
+  "situacao": "Recusado",
+  "unique idx_aluno_evento": "2, 2"
+  },
+  {
+    "id": "3",
+  "id_aluno": "3",
+  "id_evento": "3",
+  "situacao": "Pendente",
+  "unique idx_aluno_evento": "3, 3"
+  }
+  ],
+  "pagamentos": [{
+  "id": "1",
+  "id_aluno": "1",
+  "id_evento": "1",
+  "valor": "R$45,99",
+  "data_vencimento": "04/05/2023",
+  "forma_pagamento": "Cartão de Crédito",
+  "numero_cartao": "12345678901112131415",
+  "data_expiracao_cartao": "08/08/2023",
+  "codigo_seguranca_cartao": "07690",
+  "numero_conta_bancaria": "",
+  "nome_titular_conta_bancaria": "",
+  "cpf_titular_conta_bancaria": "",
+  "nome_banco": "",
+  "agencia_bancaria": "",
+  "unique idx_aluno_evento": "1, 1"
+},
+{
+  "id": "1",
+  "id_aluno": "1",
+  "id_evento": "1",
+  "valor": "R$45,99",
+  "data_vencimento": "04/05/2023",
+  "forma_pagamento": "Transferência Bancária",
+  "numero_cartao": "",
+  "data_expiracao_cartao": "",
+  "codigo_seguranca_cartao": "",
+  "numero_conta_bancaria": "09876543211234567890",
+  "nome_titular_conta_bancaria": "João da Silva",
+  "cpf_titular_conta_bancaria": "097868564374",
+  "nome_banco": "Banco do Brasil",
+  "agencia_bancaria": "Agência 320",
+  "unique idx_aluno_evento": "2, 2"
+},
+{
+  "id": "3",
+  "id_aluno": "3",
+  "id_evento": "3",
+  "valor": "R$45,99",
+  "data_vencimento": "08/06/2023",
+  "forma_pagamento": "Cartão de Crédito",
+  "numero_cartao": "09786542135467289465",
+  "data_expiracao_cartao": "10/09/2023",
+  "codigo_seguranca_cartao": "06748",
+  "numero_conta_bancaria": "",
+  "nome_titular_conta_bancaria": "",
+  "cpf_titular_conta_bancaria": "",
+  "nome_banco": "",
+  "agencia_bancaria": "",
+  "unique idx_aluno_evento": "3, 3"
 }
+  ],
+  "fotos": [ {
+  "id": "1",
+  "id_evento": "1",
+  "nome": "Foto da Formatura",
+  "descricao": "Foto onde estão todos os alunos e blablabla",
+  "url": "https://insirafotoaqui1.png"
+  },
+  {
+    "id": "2",
+  "id_evento": "2",
+  "nome": "Foto da Formatura",
+  "descricao": "Foto onde estão todos os alunos e blablabla",
+  "url": "https://insirafotoaqui2.png"
+  },
+  {
+    "id": "3",
+  "id_evento": "3",
+  "nome": "Foto da Formatura",
+  "descricao": "Foto onde estão todos os alunos e blablabla",
+  "url": "https://insirafotoaqui3.png"
+  }
+]
+}
+  
