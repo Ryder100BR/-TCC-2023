@@ -4,12 +4,13 @@ const app = express()
 const cors = require ('cors')
 const port = process.env.port || 3000
 
-app.get('/', (req, res) => {
-  app.use(express.json())
-  app.use(cors())
-  app.use('/api', api)
-  res.send('Servidor Backend - FormaControl')
-})
+const {routes} = require("./src/routes/index");
+
+
+app.use(express.json());
+app.use(cors());
+app.use(routes);
+app.use('/api', api)
 
 app.listen(port, () => {
   console.log(`Servidor na porta: ${port} ${new Date()}`)
