@@ -4,7 +4,7 @@ const { storage, uploadFolder } = require("../config/upload");
 const multer = require("multer");
  
 const Usuarios = require("../controllers/usuarios/index");
-const Projetos = require("../controller/projetos/index");
+const Projetos = require("../controllers/projetos/index");
 
 const routes = new Router();
 const upload = multer({ storage });
