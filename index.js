@@ -2,7 +2,7 @@ const express = require('express')
 const {server: api} = require('./src/api/index') 
 const app = express()
 const cors = require ('cors')
-const port = process.env.port || 8080;
+const port = process.env.port || 3000;
 
 const {routes} = require("./src/routes/index");
 

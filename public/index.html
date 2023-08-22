@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Backend TCC 2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-color: black;
+      font-family: 'Roboto', sans-serif;
+    "
+  >
+    <div
+      style="
+        width: 250px;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <span>Backend 2022 - Gravação</span>
+      <span>Contagem Regressiva</span>
+      <span id="timer" style="font-weight: 700;">00:00</span>
+    </div>
+    <script>
+      function autoRefresh() {
+        window.location = window.location.href;
+      }
+      setInterval("autoRefresh()", 60000);
+      timer = document.getElementById("timer");
+      let contagem = 60;
+      function updateTimer() {
+        contagem -= 1;
+        timer.innerHTML = "00:" + ("0" + contagem).slice(-2);
+      }
+      setInterval("updateTimer()", 1000);
+    </script>
+  </body>
+</html>
