@@ -39,8 +39,16 @@
       "curso": "Administração",
       "etec": "Prof. Milton Gazzetti",
       "id": "qkm0n0Q"
+    },
+    {
+      "nome": "Miguel G",
+      "email": "nada@nada.com",
+      "senha": "As12345@",
+      "contrasenha": "As12345@",
+      "curso": "Info",
+      "etec": "Milton G.",
+      "id": "Ehay3Pj"
     }
-
   ],
   "eventos": [
     {
