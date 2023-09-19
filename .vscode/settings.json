@@ -1,5 +1,6 @@
 {
     "githubPullRequests.ignoredPullRequestBranches": [
-        "main"
+        "main",
+        "Daniel-Ferrari-TCC"
     ]
 }
