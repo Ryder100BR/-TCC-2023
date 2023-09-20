@@ -48,6 +48,15 @@
       "curso": "Info",
       "etec": "Milton G.",
       "id": "Ehay3Pj"
+    },
+    {
+      "nome": "Gabi Y.",
+      "email": "gabiy@gmail.com",
+      "senha": "Sa12345@",
+      "contrasenha": "Sa12345@",
+      "curso": "Info",
+      "etec": "Prof. Milton",
+      "id": "GriNvAn"
     }
   ],
   "eventos": [
