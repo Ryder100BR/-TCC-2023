@@ -4,10 +4,6 @@ const { storage, uploadFolder } = require("../config/upload");
 const multer = require("multer");
 
 const Usuarios = require("../controllers/usuarios/index");
-const Convites = require("../controllers/convites/index");
-const Pagamentos = require("../controllers/pagamentos/index");
-const Fotos = require("../controllers/fotos/index");
-const Eventos = require("../controllers/eventos/index");
 
 const routes = new Router();
 const upload = multer({ storage });
@@ -40,21 +36,15 @@ routes.get("/teste", (req, res, next) => {
   res.status(200).send("Teste de mensagem").end();
 });
 
-// Rotas para a entidade "usuarios"
+//routes.use("/api/*", Usuarios.signup);
+//routes.use("/api/*", Usuarios.ensureAuthenticated);
+
+// routes.use(Usuarios.ensureAuthenticated);
+
 routes.post("/api/usuarios", Usuarios.store);
 routes.patch("/api/usuarios/:id", Usuarios.update);
 routes.patch("/api/avatar/:id", upload.single("avatar"), Usuarios.uploadPhoto);
 
-// Rotas para a entidade "convites"
-routes.post("/api/convites", Convites.adicio);
 
-// Rotas para a entidade "pagamentos"
-routes.post("/api/pagamentos", Pagamentos.adicionarPagamento);
-
-// Rotas para a entidade "fotos"
-routes.post("/api/fotos", Fotos.adicionarFoto);
-
-// Rotas para a entidade "eventos"
-routes.post("/api/eventos", Eventos.adicionarEvento);
 
 module.exports = { routes };
