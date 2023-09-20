@@ -46,7 +46,7 @@ routes.patch("/api/usuarios/:id", Usuarios.update);
 routes.patch("/api/avatar/:id", upload.single("avatar"), Usuarios.uploadPhoto);
 
 // Rotas para a entidade "convites"
-routes.post("/api/convites", Convites.adicionarConvite);
+routes.post("/api/convites", Convites.adicio);
 
 // Rotas para a entidade "pagamentos"
 routes.post("/api/pagamentos", Pagamentos.adicionarPagamento);

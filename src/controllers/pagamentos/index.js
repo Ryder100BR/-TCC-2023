@@ -119,7 +119,7 @@ const adicionarPagamento = async (req, res) => {
 
     res.status(201).json({ mensagem: 'Pagamento adicionado com sucesso' });
   } catch (error) {
-    res.status(400).json({ erro: error.message });
+    res.status(400).json({ erro: error.message }); 
   }
 };
 
