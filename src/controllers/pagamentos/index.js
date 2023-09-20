@@ -123,7 +123,6 @@ const adicionarPagamento = async (req, res) => {
   }
 };
 
-// Exemplo de uso do controlador para adicionar um pagamento
 const req = {
   body: {
     id: '1',
@@ -144,3 +143,5 @@ const req = {
 };
 
 adicionarPagamento(req, { status: () => {}, json: console.log });
+
+
