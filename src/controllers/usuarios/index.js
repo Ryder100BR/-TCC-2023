@@ -176,10 +176,17 @@ class Usuarios {
         .json({ error: "Incorrect user/password combination" });
 
     delete usuario.usu_senha;
+    delete usuario.usu_nivel
+
+     /**
+      * site: www.md5.cz
+      * chave: formCon
+      * hash: 1a5ff765cc241849ebc55d248797bd90
+      */
 
     const token = sign({}, authConfig.jwt.secret, {
       subject: usuario.id.toString(),
-      expiresIn: authConfig.jwt.expiresIn
+      expiresIn: authConfig.jwt.expiresIn 
     });
 
     return res.status(200).send({ usuario, token }).end();
