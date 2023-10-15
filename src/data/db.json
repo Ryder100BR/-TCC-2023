@@ -57,6 +57,15 @@
       "curso": "Info",
       "etec": "Prof. Milton",
       "id": "GriNvAn"
+    },
+    {
+      "nome": "Danilo Henrique",
+      "email": "danilo@gmail.com",
+      "senha": "ASD123asd@",
+      "contrasenha": "ASD123asd@",
+      "curso": "ADM",
+      "etec": "099",
+      "id": "V-HHdJ_"
     }
   ],
   "eventos": [
