@@ -40,4 +40,6 @@ const req = {
   },
 };
 
+module.exports = new Fotos(); 
+
 adicionarFoto(req, { status: () => {}, json: console.log });

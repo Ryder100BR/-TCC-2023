@@ -38,4 +38,6 @@ const req = {
   },
 };
 
+module.exports = new Eventos(); 
+
 adicionarEvento(req, { status: () => {}, json: console.log });

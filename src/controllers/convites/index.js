@@ -50,6 +50,8 @@ const req = {
     situacao: 'Pendente',
     unique_idx_aluno_evento: '1,1',
   },
-};
+}
+
+module.exports = new Convites();
 
 adicionarConvite(req, { status: () => {}, json: console.log });
