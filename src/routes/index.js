@@ -29,7 +29,7 @@ routes.get("/api/db", (req, res) => {
 
 routes.use("/files", expressStatic(uploadFolder));
 
-routes.post("/auth", Usuarios.auth);
+routes.post("/api/auth", Usuarios.auth);
 routes.post("/signup", Usuarios.signup);
 routes.get("/activate/:chave", Usuarios.activate);
 
@@ -42,8 +42,8 @@ routes.get("/teste", (req, res, next) => {
 
 // routes.use(Usuarios.ensureAuthenticated);
 
-routes.post("/api/usuarios", Usuarios.store);
-routes.patch("/api/usuarios/:id", Usuarios.update);
+routes.post("/api/alunos", Usuarios.store);
+routes.patch("/api/alunos/:id", Usuarios.update);
 routes.patch("/api/avatar/:id", upload.single("avatar"), Usuarios.uploadPhoto);
 
 

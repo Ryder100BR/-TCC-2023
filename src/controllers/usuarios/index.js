@@ -158,7 +158,7 @@ class Usuarios {
   async auth(req, res, next) {
     const { usu_email, usu_senha } = req.body;
 
-    // console.log(req.body);
+    console.log(req.body);
     let usuario = apiEndpoints.db
       .get("usuarios")
       .find({ usu_email })

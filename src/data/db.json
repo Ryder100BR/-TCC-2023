@@ -75,6 +75,15 @@
       "curso": "Info",
       "etec": "099",
       "id": "XdjLkHz"
+    },
+    {
+      "nome": "Graziani Z.",
+      "email": "grazi@gmail.com",
+      "senha": "Grazi123$",
+      "contrasenha": "Grazi123$",
+      "curso": "Informática p/ internet",
+      "etec": "Prof. Milton Gazzetti",
+      "id": "HFb6yvl"
     }
   ],
   "eventos": [
