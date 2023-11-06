@@ -17,7 +17,7 @@ class MailServices {
         return resultado;
     }
 
-    async sendActivation(_usu_nome, _usu_email, _usu_chave) {
+    async sendActivation({usu_nome, usu_email, usu_chave}) {
         const output = 'Olá, ${usu_nome} <br/><br/> Você precisa validar seu cadastro em: <a href="https://ryder100br-super-halibut-45w454vxxqxfqrw6-8080.preview.app.github.dev/ativacao/${usu_chave}"Chave</a>';
         
         try {
