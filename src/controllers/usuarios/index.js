@@ -28,7 +28,6 @@ class Usuarios {
       usu_email: string()
         .email("Entre com um e-mail válido")
         .required("Entre com o e-mail"),
-      0,
       usu_nivel: mixed(["admin", "comum"], "Tipo de usuário incorreto")
     });
 
