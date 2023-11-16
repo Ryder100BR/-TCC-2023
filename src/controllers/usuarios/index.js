@@ -26,7 +26,7 @@ class Usuarios {
     let usuarioSchema = object({
       usu_nome: string().required("Entre com o nome do usuário"),
       usu_email: string()
-        .email("Entre com um e-mail válido")
+       
         .required("Entre com o e-mail"),
       usu_senha: string()
       .required("Entre com a senha")
