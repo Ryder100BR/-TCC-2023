@@ -28,6 +28,12 @@ class Usuarios {
       usu_email: string()
         .email("Entre com um e-mail válido")
         .required("Entre com o e-mail"),
+      usu_senha: string()
+      .required("Entre com a senha")
+      .matches(
+        /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,})/,
+        "A senha precisa ter no mínimo 6 caracteres, sendo: uma maiúscula, uma minúscula, um número e um caracter especial"
+      ),
       usu_nivel: mixed(["admin", "comum"], "Tipo de usuário incorreto")
     });
 
