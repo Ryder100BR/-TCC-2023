@@ -11,18 +11,18 @@ class MailServices {
                 ...message
             });
         } catch (error) {
-            // console.log(error);
+             console.log(error);
             return error;
         }
         return resultado;
     }
 
-    async sendActivation({usu_nome, usu_email, usu_chave}) {
-        const output = 'Olá, ${usu_nome} <br/><br/> Você precisa validar seu cadastro em: <a href="https://ryder100br-super-halibut-45w454vxxqxfqrw6-8080.preview.app.github.dev/ativacao/${usu_chave}"Chave</a>';
+    async sendActivation({ usu_nome, usu_email, usu_chave }) {
+        const output = `Olá, ${usu_nome} <br/><br/> Você precisa validar seu cadastro em: <a href="https://psychic-eureka-4j76wx5xxrr2jgjv-3000.app.github.dev/ativacao/${usu_chave}">Chave</a>`;
         
         try {
             await this.sendMail({
-                to: '$usu_nome <${usu_email}>',
+                to: `${usu_nome} <${usu_email}>`,
                 subject: "Confirmação de E-mail",
                 html: output
             })
