@@ -2,7 +2,7 @@ const nodemailer = require("nodemailer");
 const configMail = require("../config/mail");
 const transporter = nodemailer.createTransport(configMail);
 
-class MailServices {
+class MailService {
     async sendMail (message) {
         let resultado ;
         try {
@@ -34,4 +34,4 @@ class MailServices {
     }
 }
 
-module.exports = new MailServices();
+module.exports = new MailService();
