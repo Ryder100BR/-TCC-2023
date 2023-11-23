@@ -34,6 +34,11 @@ class Usuarios {
         /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,})/,
         "A senha precisa ter no mínimo 6 caracteres, sendo: uma maiúscula, uma minúscula, um número e um caracter especial"
       ),
+      usu_contrasenha: string()
+      .required("Entre com a contra senha")
+      .oneOf([ref("senha"), null], "Senha e contra senha devem ser iguais"),
+    usu_curso: string().required("Entre com o curso"),
+    usu_etec: string().required("Entre com sua Etec"),
       usu_nivel: mixed(["admin", "comum"], "Tipo de usuário incorreto")
     });
 
