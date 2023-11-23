@@ -4,7 +4,7 @@ const transporter = nodemailer.createTransport(configMail);
 
 class MailService {
     async sendMail (message) {
-        let resultado ;
+        let resultado;
         try {
             resultado = transporter.sendMail({
                 ...configMail.default,
@@ -18,7 +18,7 @@ class MailService {
     }
 
     async sendActivation({ usu_nome, usu_email, usu_chave }) {
-        const output = `Olá, ${usu_nome} <br/><br/> Você precisa validar seu cadastro em: <a href="https://psychic-eureka-4j76wx5xxrr2jgjv-3000.app.github.dev/ativacao/${usu_chave}">Chave</a>`;
+        const output = `Olá, ${usu_nome} <br/><br/> Você precisa validar seu cadastro em: <a href="https://psychic-eureka-4j76wx5xxrr2jgjv-3000.app.github.dev/activate/${usu_chave}">Chave</a>`;
         
         try {
             await this.sendMail({
