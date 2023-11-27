@@ -106,29 +106,7 @@
       "local": "Algum lugar aí 3"
     }
   ],
-  "convites": [
-    {
-      "id": "1",
-      "id_aluno": "1",
-      "id_evento": "1",
-      "situacao": "Aceito",
-      "unique idx_aluno_evento": "1, 1"
-    },
-    {
-      "id": "2",
-      "id_aluno": "2",
-      "id_evento": "2",
-      "situacao": "Recusado",
-      "unique idx_aluno_evento": "2, 2"
-    },
-    {
-      "id": "3",
-      "id_aluno": "3",
-      "id_evento": "3",
-      "situacao": "Pendente",
-      "unique idx_aluno_evento": "3, 3"
-    }
-  ],
+
   "pagamentos": [
     {
       "id": "1",
