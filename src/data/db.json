@@ -107,59 +107,6 @@
     }
   ],
 
-  "pagamentos": [
-    {
-      "id": "1",
-      "id_aluno": "1",
-      "id_evento": "1",
-      "valor": "R$45,99",
-      "data_vencimento": "04/05/2023",
-      "forma_pagamento": "Cartão de Crédito",
-      "numero_cartao": "12345678901112131415",
-      "data_expiracao_cartao": "08/08/2023",
-      "codigo_seguranca_cartao": "07690",
-      "numero_conta_bancaria": "",
-      "nome_titular_conta_bancaria": "",
-      "cpf_titular_conta_bancaria": "",
-      "nome_banco": "",
-      "agencia_bancaria": "",
-      "unique idx_aluno_evento": "1, 1"
-    },
-    {
-      "id": "1",
-      "id_aluno": "1",
-      "id_evento": "1",
-      "valor": "R$45,99",
-      "data_vencimento": "04/05/2023",
-      "forma_pagamento": "Transferência Bancária",
-      "numero_cartao": "",
-      "data_expiracao_cartao": "",
-      "codigo_seguranca_cartao": "",
-      "numero_conta_bancaria": "09876543211234567890",
-      "nome_titular_conta_bancaria": "João da Silva",
-      "cpf_titular_conta_bancaria": "097868564374",
-      "nome_banco": "Banco do Brasil",
-      "agencia_bancaria": "Agência 320",
-      "unique idx_aluno_evento": "2, 2"
-    },
-    {
-      "id": "3",
-      "id_aluno": "3",
-      "id_evento": "3",
-      "valor": "R$45,99",
-      "data_vencimento": "08/06/2023",
-      "forma_pagamento": "Cartão de Crédito",
-      "numero_cartao": "09786542135467289465",
-      "data_expiracao_cartao": "10/09/2023",
-      "codigo_seguranca_cartao": "06748",
-      "numero_conta_bancaria": "",
-      "nome_titular_conta_bancaria": "",
-      "cpf_titular_conta_bancaria": "",
-      "nome_banco": "",
-      "agencia_bancaria": "",
-      "unique idx_aluno_evento": "3, 3"
-    }
-  ],
   "fotos": [
     {
       "id": "1",
