@@ -102,6 +102,15 @@
       "usu_curso": "informatica",
       "usu_etec": "099",
       "id": "TEV4Yfr"
+    },
+    {
+      "usu_nome": "Mirian C.",
+      "usu_email": "mirianc@gmail.com",
+      "usu_senha": "Mirian1@",
+      "usu_contrasenha": "Mirian1@",
+      "usu_curso": "Info",
+      "usu_etec": "099",
+      "id": "Seb7Hrb"
     }
   ],
   "eventos": [
