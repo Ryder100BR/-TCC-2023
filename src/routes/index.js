@@ -40,7 +40,7 @@ routes.get("/teste", (req, res, next) => {
 //routes.use("/api/*", Usuarios.signup);
 //routes.use("/api/*", Usuarios.ensureAuthenticated);
 
-// routes.use(Usuarios.ensureAuthenticated);
+ //routes.use(Usuarios.ensureAuthenticated);
 
 routes.post("/api/alunos", Usuarios.store);
 routes.patch("/api/alunos/:id", Usuarios.update);

@@ -84,6 +84,15 @@
       "curso": "Informática p/ internet",
       "etec": "Prof. Milton Gazzetti",
       "id": "HFb6yvl"
+    },
+    {
+      "usu_nome": "Meu Bom",
+      "usu_email": "meubo@gmail.com",
+      "usu_senha": "Meubo1@",
+      "usu_contrasenha": "Meubo1@",
+      "usu_curso": "info",
+      "usu_etec": "099",
+      "id": "udWUmHj"
     }
   ],
   "eventos": [
@@ -106,7 +115,6 @@
       "local": "Algum lugar aí 3"
     }
   ],
-
   "fotos": [
     {
       "id": "1",

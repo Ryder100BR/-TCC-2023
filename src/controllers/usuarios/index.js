@@ -22,7 +22,7 @@ class Usuarios {
     next();
   }
 
-  async store(req, res, next) {
+  async store(req, res, ref, next) {
     let usuarioSchema = object({
       usu_nome: string().required("Entre com o nome do usuário"),
       usu_email: string()
@@ -37,8 +37,6 @@ class Usuarios {
       usu_contrasenha: string()
       .required("Entre com a contra senha")
       .oneOf([ref("usu_senha"), null], "Senha e contra senha devem ser iguais"),
-    usu_curso: string().required("Entre com o curso"),
-    usu_etec: string().required("Entre com sua Etec"),
       usu_nivel: mixed(["admin", "comum"], "Tipo de usuário incorreto")
     });
 
