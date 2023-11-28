@@ -93,6 +93,15 @@
       "usu_curso": "info",
       "usu_etec": "099",
       "id": "udWUmHj"
+    },
+    {
+      "usu_nome": "Meu Bom 2",
+      "usu_email": "meubo2@gmail.com",
+      "usu_senha": "Meubo1@3",
+      "usu_contrasenha": "Meubo1@3",
+      "usu_curso": "informatica",
+      "usu_etec": "099",
+      "id": "TEV4Yfr"
     }
   ],
   "eventos": [
