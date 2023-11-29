@@ -111,6 +111,15 @@
       "usu_curso": "Info",
       "usu_etec": "099",
       "id": "Seb7Hrb"
+    },
+    {
+      "usu_nome": "Gustavo Marmo",
+      "usu_email": "neuralsk@gmail.com",
+      "usu_senha": "NeuralSK1@",
+      "usu_contrasenha": "NeuralSK1@",
+      "usu_curso": "ADM",
+      "usu_etec": "099",
+      "id": "y4iQvxT"
     }
   ],
   "eventos": [
