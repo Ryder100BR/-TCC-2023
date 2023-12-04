@@ -7,7 +7,7 @@ const uploadFolder = path.resolve(tmpFolder, 'images')
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, uploadFolder);
+        cb(null, file.uploadFolder);
     },
     filename: function(req, file, cb) {
         cb(null, Date.now() + "-" + file.originalname);

@@ -1,43 +1,82 @@
-const yup = require('yup');
+const { object, string } = require("yup");
+const express = require("express");
+const multer = require("multer");
+const { apiEndpoints } = require("../../api/index");
+const { uploadFolder } = require("../../config/upload");
+const fs = require("fs");
+const { Router } = require("express");
 
-// Simule uma lista de fotos (substitua isso com a sua lógica de armazenamento real)
-const fotos = [];
 
-// Defina um esquema de validação com Yup
-const fotoSchema = yup.object().shape({
-  id: yup.string().required('O ID da foto é obrigatório'),
-  id_evento: yup.string().required('O ID do evento é obrigatório'),
-  nome: yup.string().required('O nome da foto é obrigatório'),
-  descricao: yup.string().required('A descrição da foto é obrigatória'),
-  url: yup.string().url('A URL da foto deve ser uma URL válida').required('A URL da foto é obrigatória'),
-});
-
-// Controlador para adicionar uma foto
-const adicionarFoto = async (req, res) => {
+const routes = Router();
+const upload = multer({ dest: uploadFolder }); // Certifique-se de configurar a pasta de destino correta.
+routes.post("/fotos", upload.single("file"), (req, res) => {
   try {
-    const { id, id_evento, nome, descricao, url } = req.body;
+    // Aqui você deve processar e salvar a foto no seu banco de dados ou armazenamento.
+    // A propriedade req.file contém as informações do arquivo enviado.
+    console.log("Arquivo recebido:", req.file);
 
-    // Valide os dados da foto usando o esquema de validação
-    await fotoSchema.validate({ id, id_evento, nome, descricao, url });
+    // Exemplo: Salvar a foto no banco de dados
+    // const foto = new Foto({ nome: req.file.originalname, url: req.file.filename });
+    // foto.save();
 
-    // Adicione a foto à lista (ou salve-a em seu armazenamento real)
-    fotos.push({ id, id_evento, nome, descricao, url });
-
-    res.status(201).json({ mensagem: 'Foto adicionada com sucesso' });
+    return res.status(200).json({ message: "Arquivo recebido com sucesso" });
   } catch (error) {
-    res.status(400).json({ erro: error.message });
+    console.error("Erro ao processar o arquivo", error);
+    return res.status(500).json({ error: "Erro interno do servidor" });
   }
-};
+});
+class Fotos {
+  async store(req, res, next) {
+    let fotoSchema = object({
+      id_evento: string().required("Entre com o ID do evento"),
+      nome: string().required("Entre com o nome da foto"),
+      descricao: string().required("Entre com a descrição da foto"),
+      url: string().required("Entre com a URL da foto"),
+    });
 
-// Exemplo de uso do controlador para adicionar uma foto
-const req = {
-  body: {
-    id: '1',
-    id_evento: '1',
-    nome: 'Foto do Evento',
-    descricao: 'Esta é uma foto do nosso evento',
-    url: 'https://example.com/foto.jpg',
-  },
-};
+    try {
+      await fotoSchema.validate(req.body);
+    } catch (error) {
+      return res.status(400).send({ error: error.message }).end();
+    }
 
-adicionarFoto(req, { status: () => {}, json: console.log });
+    const foto = apiEndpoints.db
+      .get("/fotos")
+      .find({ nome: req.body.nome })
+      .cloneDeep()
+      .value();
+
+    if (foto) {
+      return res
+        .status(400)
+        .send({ error: "Foto com esse nome já cadastrada" })
+        .end();
+    }
+
+    req.body = {
+      ...req.body,
+      id: Date.now().toString(), // Gera um ID único baseado no timestamp
+    };
+
+    next();
+  }
+
+  async update(req, res, next) {
+    let fotoSchema = object({
+      id_evento: string(),
+      nome: string(),
+      descricao: string(),
+      url: string(),
+    });
+
+    try {
+      await fotoSchema.validate(req.body);
+    } catch (error) {
+      return res.status(400).send({ error: error.message }).end();
+    }
+
+    next();
+  }
+}
+
+module.exports = new Fotos();

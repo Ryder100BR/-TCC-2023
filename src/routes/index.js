@@ -2,8 +2,9 @@ const { Router, static: expressStatic } = require("express");
 const http = require("http");
 const { storage, uploadFolder } = require("../config/upload");
 const multer = require("multer");
-
+const express = require('express');
 const Usuarios = require("../controllers/usuarios/index");
+const FotosController = require("../controllers/fotos/index");
 
 
 const routes = new Router();
@@ -27,7 +28,11 @@ routes.get("/api/db", (req, res) => {
   return res.status(404).end(http.STATUS_CODES[404]);
 });
 
-routes.use("/files", expressStatic(uploadFolder));
+routes.post("/api/fotos", FotosController.store);
+routes.patch("/api/fotos/:id", FotosController.update);
+
+routes.use("/api/fotos", express.static(uploadFolder));
+
 
 routes.post("/api/auth", Usuarios.auth);
 routes.post("/signup", Usuarios.signup);
