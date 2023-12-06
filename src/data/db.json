@@ -120,6 +120,15 @@
       "usu_curso": "ADM",
       "usu_etec": "099",
       "id": "y4iQvxT"
+    },
+    {
+      "usu_nome": "Pamonha Games",
+      "usu_email": "pamonhagames@gmail.com",
+      "usu_senha": "Pamonha1#",
+      "usu_contrasenha": "Pamonha1#",
+      "usu_curso": "Info",
+      "usu_etec": "099",
+      "id": "hsyQRQf"
     }
   ],
   "eventos": [
@@ -219,6 +228,20 @@
       "descricao": "dasdasd",
       "url": "blob:https://hncghj.csb.app/5c811996-018b-47e9-a0e4-fa97bf436327",
       "id": "1701695265611"
+    },
+    {
+      "id_evento": "2",
+      "nome": "ashublaba",
+      "descricao": "foto do gordo",
+      "url": "blob:https://hncghj.csb.app/7dbea274-7427-4587-a8d9-1f5dcd3b569c",
+      "id": "1701726721940"
+    },
+    {
+      "id_evento": "1",
+      "nome": "juninho",
+      "descricao": "juninho brabo",
+      "url": "blob:https://hncghj.csb.app/51293aae-13a7-44eb-8659-329df1bdb52b",
+      "id": "1701801227164"
     }
   ]
 }
