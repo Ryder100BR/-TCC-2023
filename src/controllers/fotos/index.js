@@ -16,8 +16,8 @@ routes.post("/fotos", upload.single("file"), (req, res) => {
     console.log("Arquivo recebido:", req.file);
 
     // Exemplo: Salvar a foto no banco de dados
-    // const foto = new Foto({ nome: req.file.originalname, url: req.file.filename });
-    // foto.save();
+     const foto = new Foto({ nome: req.file.originalname, url: req.file.filename });
+     foto.save();
 
     return res.status(200).json({ message: "Arquivo recebido com sucesso" });
   } catch (error) {
