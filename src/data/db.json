@@ -1,89 +1,88 @@
 {
   "alunos": [
     {
-      "id": "1",
-      "nome": "Daniel",
-      "email": "daniel@gmail.com",
-      "senha": "jkgets234",
-      "curso": "Informática para a Internet - 3 Ano",
-      "etec": "ETEC Professor Milton Gazzetti"
+    "usu_nome": "Daniel",
+    "usu_email": "daniel@gmail.com",
+    "usu_senha": "jkgets234",
+    "usu_curso": "Informática para a Internet - 3 Ano",
+    "usu_etec": "ETEC Professor Milton Gazzetti"
     },
     {
       "id": "2",
-      "nome": "JOão",
-      "email": "joao@gmail.com",
-      "senha": "sdafs54",
-      "curso": "Administração - 3 Ano",
-      "etec": "ETEC Professor Milton Gazzetti"
+      "usu_nome": "JOão",
+      "usu_email": "joao@gmail.com",
+      "usu_senha": "sdafs54",
+      "usu_curso": "Administração - 3 Ano",
+      "usu_etec": "ETEC Professor Milton Gazzetti"
     },
     {
       "id": "3",
-      "nome": "Maria",
-      "email": "maria@gmail.com",
-      "senha": "ksjdasjdn567",
-      "curso": "Agro - 3 Ano",
-      "etec": "ETEC Professor Milton Gazzetti"
+      "usu_nome": "Maria",
+      "usu_email": "maria@gmail.com",
+      "usu_senha": "ksjdasjdn567",
+      "usu_curso": "Agro - 3 Ano",
+      "usu_etec": "ETEC Professor Milton Gazzetti"
     },
     {
-      "nome": "Daniel Ferrari",
-      "email": "nada@nada.com",
-      "senha": "A12345@a",
-      "curso": "Informática para a Internet",
-      "etec": "Prof. Milton Gazzetti",
+      "usu_nome": "Daniel Ferrari",
+      "usu_email": "nada@nada.com",
+      "usu_senha": "A12345@a",
+      "usu_curso": "Informática para a Internet",
+      "usu_etec": "Prof. Milton Gazzetti",
       "id": "QgC4UUw"
     },
     {
-      "nome": "Gustavo Abegão",
-      "email": "gustavo@teste.com",
-      "senha": "sS1234@@",
-      "curso": "Administração",
-      "etec": "Prof. Milton Gazzetti",
+      "usu_nome": "Gustavo Abegão",
+      "usu_email": "gustavo@teste.com",
+      "usu_senha": "sS1234@@",
+      "usu_curso": "Administração",
+      "usu_etec": "Prof. Milton Gazzetti",
       "id": "qkm0n0Q"
     },
     {
-      "nome": "Miguel G",
-      "email": "nada@nada.com",
-      "senha": "As12345@",
-      "contrasenha": "As12345@",
-      "curso": "Info",
-      "etec": "Milton G.",
+      "usu_nome": "Miguel G",
+      "usu_email": "nada@nada.com",
+      "usu_senha": "As12345@",
+      "usu_contrasenha": "As12345@",
+      "usu_curso": "Info",
+      "usu_etec": "Milton G.",
       "id": "Ehay3Pj"
     },
     {
-      "nome": "Gabi Y.",
-      "email": "gabiy@gmail.com",
-      "senha": "Sa12345@",
-      "contrasenha": "Sa12345@",
-      "curso": "Info",
-      "etec": "Prof. Milton",
+      "usu_nome": "Gabi Y.",
+      "usu_email": "gabiy@gmail.com",
+      "usu_senha": "Sa12345@",
+      "usu_contrasenha": "Sa12345@",
+      "usu_curso": "Info",
+      "usu_etec": "Prof. Milton",
       "id": "GriNvAn"
     },
     {
-      "nome": "Danilo Henrique",
-      "email": "danilo@gmail.com",
-      "senha": "ASD123asd@",
-      "contrasenha": "ASD123asd@",
-      "curso": "ADM",
-      "etec": "099",
-      "id": "V-HHdJ_"
+      "usu_nome": "Danilo Henrique",
+      "usu_email": "danilo@gmail.com",
+      "usu_senha": "ASD123asd@",
+      "usu_contrasenha": "ASD123asd@",
+      "usu_curso": "ADM",
+      "usu_etec": "099",
+      "usu_id": "V-HHdJ_"
     },
     {
-      "nome": "Matheus Gabriel",
-      "email": "nitratodasilva@gmail.com",
-      "senha": "ASD123dsa@",
-      "contrasenha": "ASD123dsa@",
-      "curso": "Info",
-      "etec": "099",
-      "id": "XdjLkHz"
+      "usu_nome": "Matheus Gabriel",
+      "usu_email": "nitratodasilva@gmail.com",
+      "usu_senha": "ASD123dsa@",
+      "usu_contrasenha": "ASD123dsa@",
+      "usu_curso": "Info",
+      "usu_etec": "099",
+      "usu_id": "XdjLkHz"
     },
     {
-      "nome": "Graziani Z.",
-      "email": "grazi@gmail.com",
-      "senha": "Grazi123$",
-      "contrasenha": "Grazi123$",
-      "curso": "Informática p/ internet",
-      "etec": "Prof. Milton Gazzetti",
-      "id": "HFb6yvl"
+      "usu_nome": "Graziani Z.",
+      "usu_email": "grazi@gmail.com",
+      "usu_senha": "Grazi123$",
+      "usu_contrasenha": "Grazi123$",
+      "usu_curso": "Informática p/ internet",
+      "usu_etec": "Prof. Milton Gazzetti",
+      "usu_id": "HFb6yvl"
     },
     {
       "usu_nome": "Meu Bom",
