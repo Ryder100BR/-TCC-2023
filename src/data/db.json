@@ -53,6 +53,15 @@
       "usu_curso": "Info",
       "usu_etec": "099",
       "id": "475PLA9"
+    },
+    {
+      "usu_nome": "Luís Juninho",
+      "usu_email": "juninho.bravo@gmail.com",
+      "usu_senha": "Jun123#",
+      "usu_contrasenha": "Jun123#",
+      "usu_curso": "Info",
+      "usu_etec": "099",
+      "id": "HRLMiXv"
     }
   ],
   "eventos": [
@@ -180,6 +189,20 @@
       "descricao": "asdadaasd",
       "url": "blob:https://hncghj.csb.app/cd450356-1675-486b-98cd-1504d6df1b2e",
       "id": "1701842710541"
+    },
+    {
+      "id_evento": "1",
+      "nome": "Fotos de TEste",
+      "descricao": "descrição aqui",
+      "url": "blob:https://hncghj.csb.app/20a125df-dda4-4366-aeef-df68fda3e144",
+      "id": "1701844501644"
+    },
+    {
+      "id_evento": "3",
+      "nome": "Gustavo Berk Moderno",
+      "descricao": "(INSIRA DESCRIÇÃO AQUI)",
+      "url": "blob:https://hncghj.csb.app/ec572cc0-f0f9-4a72-8e38-9c534ec72af9",
+      "id": "1701864804970"
     }
   ]
 }
